@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CompetitionEventDialog</class>
+ <widget class="QDialog" name="CompetitionEventDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>686</width>
+    <height>411</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Соревнование</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Категория</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="categoryComboBox"/>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="saveButton">
+         <property name="text">
+          <string>Сохранить</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="generateButton">
+         <property name="text">
+          <string>Сформировать заезды</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="saveFileButton">
+         <property name="text">
+          <string>Выгрузить в файл</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="printButton">
+         <property name="text">
+          <string>Печать</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="0">
+        <widget class="QComboBox" name="moto1ComboBox"/>
+       </item>
+       <item row="2" column="3">
+        <widget class="QComboBox" name="quaterComboBox"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QComboBox" name="moto3ComboBox"/>
+       </item>
+       <item row="2" column="4">
+        <widget class="QComboBox" name="halfComboBox"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="moto2ComboBox"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="moto1Button">
+         <property name="text">
+          <string>Мото 1</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="quaterButton">
+         <property name="text">
+          <string>1/4 финала</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="moto3Button">
+         <property name="text">
+          <string>Мото 3</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="moto2Button">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string>Мото 2</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QPushButton" name="halfButton">
+         <property name="text">
+          <string>1/2 финала</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QPushButton" name="finalButton">
+         <property name="text">
+          <string>Финал</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="6">
+        <widget class="QPushButton" name="resultButton">
+         <property name="text">
+          <string>Результаты</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="QComboBox" name="finalComboBox"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableView" name="tableView"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
